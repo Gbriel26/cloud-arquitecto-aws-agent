@@ -111,7 +111,7 @@ Edita el archivo `.env` con tus credenciales de AWS:
 # AWS Bedrock Configuration
 AWS_ACCESS_KEY_ID=tu_access_key_aqui
 AWS_SECRET_ACCESS_KEY=tu_secret_key_aqui
-AWS_REGION=us-east-1
+AWS_REGION=us-west-2
 
 # Optional: Si usas otros proveedores
 OPENAI_API_KEY=tu_openai_api_key_aqui
@@ -121,7 +121,7 @@ ANTHROPIC_API_KEY=tu_anthropic_api_key_aqui
 5. **Verificar acceso a Amazon Bedrock**
 
 Asegúrate de que tu cuenta de AWS tiene habilitado el acceso a Amazon Bedrock y al modelo Claude 3 Haiku:
-- Región: `us-east-1` (o la región configurada)
+- Región: `us-west-2` (o la región configurada)
 - Modelo: `anthropic.claude-3-haiku-20240307-v1:0`
 
 ---
