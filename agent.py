@@ -1,4 +1,5 @@
 from strands import Agent
+from strands.models import BedrockModel
 from history_manager import History_Manager
 from tool_validator import Validation_Hook
 
@@ -56,11 +57,17 @@ Respondes de forma concisa y practica, siempre en español.
 Cuando alguien te pregunta algo tecnico, das ejemplos concretos.
 """
 
-# 2. Inicializamos el agente con el modelo Haiku
+# 2. Inicializamos el agente con el modelo Claude Sonnet
+from strands.models import BedrockModel
+
+# Configurar el modelo Bedrock (usando Haiku para evitar límites de tokens)
+bedrock_model = BedrockModel(
+    model_id="us.anthropic.claude-3-haiku-20240307-v1:0"
+)
+
 agent = Agent(
     system_prompt=SYSTEM_PROMPT,
-    model="anthropic.claude-3-haiku-20240307-v1:0",
-    output_hooks=[formatear_respuesta]
+    model=bedrock_model
 )
 
 print("=" * 35)
@@ -88,10 +95,12 @@ while True:
     
     try:
         # En esta version de Strands, simplemente llamamos al agente asi:
-        respuesta = agent(user_input) 
+        respuesta_raw = agent(user_input)
+        # Aplicamos el formateo manualmente
+        respuesta = formatear_respuesta(respuesta_raw)
         print(f"\nCloudArquitecto: {respuesta}\n")
         
-        # Guardar en historial
+        # Guardar en historial (guardamos la respuesta formateada)
         history_mgr.save_entry(user_input, respuesta)
         
     except Exception as e:

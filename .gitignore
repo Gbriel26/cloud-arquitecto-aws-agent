@@ -1,0 +1,28 @@
+# --- SEGURIDAD ---
+.env
+secret.json
+credentials.json
+*.pem
+
+# --- PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+.pytest_cache/
+
+# --- KIRO & SPECS ---
+.kiro/
+tasks.md
+requirements.md
+design.md
+VERIFICATION_SUMMARY.md
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- PROYECTO ---
+historial.json
