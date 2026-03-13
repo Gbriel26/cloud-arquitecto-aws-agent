@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "timestamp": "2026-03-13T15:18:15.243104",
+    "pregunta": "Hola, ¿quién eres?",
+    "respuesta": "¡Hola! Soy CloudArquitecto, tu asistente experto en AWS. Puedo ayudarte a gestionar buckets de S3 y recomendarte instancias EC2. ¿En qué puedo ayudarte hoy?\n\n--- *Respuesta generada por CloudArquitecto*"
+  },
+  {
+    "timestamp": "2026-03-13T15:19:34.534796",
+    "pregunta": "¿Qué buckets de S3 tengo?",
+    "respuesta": "Accediendo a AWS S3... He encontrado los siguientes buckets en tu cuenta:\n- 'proyecto-final-sistemas-2026'\n- 'backup-database-production'\n- 'static-assets-webapp'\n\n--- *Respuesta generada por CloudArquitecto*"
+  },
+  {
+    "timestamp": "2026-03-13T15:20:59.382276",
+    "pregunta": "Recomiéndame una instancia para una base de datos.",
+    "respuesta": "Analizando requisitos... Para una base de datos pesada, la herramienta 'recomendar_instancia' sugiere una r5.4xlarge por su optimización de memoria.\n\n--- *Respuesta generada por CloudArquitecto*"
+  },
+  {
+    "timestamp": "2026-03-13T15:31:39.385304",
+    "pregunta": "Hola, ¿quién eres?",
+    "respuesta": "¡Hola! Soy CloudArquitecto, tu asistente experto en AWS. Puedo ayudarte a gestionar buckets de S3 y recomendarte instancias EC2. ¿En qué puedo ayudarte hoy?\n\n--- *Respuesta generada por CloudArquitecto*"
+  },
+  {
+    "timestamp": "2026-03-13T15:31:54.157525",
+    "pregunta": "¿Qué buckets de S3 tengo?",
+    "respuesta": "Accediendo a AWS S3... He encontrado los siguientes buckets en tu cuenta:\n- 'proyecto-final-sistemas-2026'\n- 'backup-database-production'\n- 'static-assets-webapp'\n\n--- *Respuesta generada por CloudArquitecto*"
+  },
+  {
+    "timestamp": "2026-03-13T15:32:02.627902",
+    "pregunta": "Recomiéndame una instancia para una base de datos.",
+    "respuesta": "Analizando requisitos... Para una base de datos pesada, la herramienta 'recomendar_instancia' sugiere una r5.4xlarge por su optimización de memoria.\n\n--- *Respuesta generada por CloudArquitecto*"
+  }
+]
